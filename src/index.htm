@@ -15,19 +15,19 @@
   <div id="app">
     <h1>String manipulations</h1>
     <div>
-      <input v-model="input" placeholder="Tekst">
+      <input id="text" v-model="input" placeholder="Tekst">
 
-      <select v-model="selected">
+      <select id="selection" v-model="selected">
         <option disabled value="">Please select one</option>
         <option>To Upper</option>
         <option>To Lower</option>
       </select>
 
-      <button @click="justDoIt">Do It!</button>
+      <button id="button" @click="justDoIt">Do It!</button>
     </div>
     <div v-if="hasContent">
-      <p>
-        {{result}}
+      <p id="para">
+        <!-- {{result}} -->
       </p>
     </div>
   </div>
